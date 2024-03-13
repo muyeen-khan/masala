@@ -125,9 +125,9 @@ export default function AddTaskPopUp({ onClose, editable }) {
                 required
               >
                 <option value="">Select Priority</option>
-                <option value="low">Low</option>
-                <option value="medium">Medium</option>
-                <option value="high">High</option>
+                <option value="নফল">নফল</option>
+                <option value="ওয়াজিব">ওয়াজিব</option>
+                <option value="ফরয">ফরয</option>
               </select>
             </div>
           </div>

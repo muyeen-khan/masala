@@ -9,11 +9,54 @@ export default function TaskManeger() {
   const initialValue = [
     {
       id: 1,
-      title: "Sample Title",
-      description: "Sample Description",
+      title: "নামায",
+      description:
+        "ইসলামের গুরুত্বপূর্ণ বিধান।নামায শুরু করতে হয় তাকবিরে উলা দিয়ে।শেষ হয় সালামের মাধ্যমে",
       tags: ["tag1", "tag2", "tag3"],
-      priority: "high",
+      priority: "ফরয",
       isFavorite: true,
+    },
+    {
+      id: 2,
+      title: "রোযা",
+      description:
+        "ইসলামের গুরুত্বপূর্ণ বিধান।সুবহে সাদিক থেকে সূর্যাস্ত পর‌্যন্ত উপবাসের মাধ্যমে রোযা রাখতে হয়।",
+      tags: ["tag4", "tag5", "tag6"],
+      priority: "ফরয",
+      isFavorite: false,
+    },
+    {
+      id: 3,
+      title: "যাকাত",
+      description:
+        "নেসাব পরিমাণ সম্পদের মালিক হলে ৪০ ভাগের একভাগ সদকাহ দিতে হয়।",
+      tags: ["tag7", "tag8", "tag9"],
+      priority: "ফরয",
+      isFavorite: true,
+    },
+    {
+      id: 4,
+      title: "হজ্ব",
+      description: "বিস্তারিত বিধান",
+      tags: ["tag10", "tag11", "tag12"],
+      priority: "ফরয",
+      isFavorite: false,
+    },
+    {
+      id: 5,
+      title: "বিতর নামায",
+      description: "তিন রাকাত নামায।এশার পর আদায় করতে হয়।",
+      tags: ["tag13", "tag14", "tag15"],
+      priority: "ওয়াজিব",
+      isFavorite: true,
+    },
+    {
+      id: 6,
+      title: "তাহাজ্জুদ নামায",
+      description: "Description Six",
+      tags: ["tag16", "tag17", "tag18"],
+      priority: "নফল",
+      isFavorite: false,
     },
   ];
   const [tasks, dispatch] = useReducer(taskReducer, initialValue);
